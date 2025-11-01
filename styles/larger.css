@@ -1,0 +1,41 @@
+@media (min-width:48rem) {
+    .site-header {
+        padding: 1rem 2rem
+    }
+
+    .menu-btn {
+        display: none
+    }
+
+    .nav {
+        display: block
+    }
+
+    .nav ul {
+        display: flex;
+        gap: .25rem
+    }
+
+    main {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    #welcome {
+        grid-column: 1 / -1
+    }
+
+    #certificate {
+        grid-column: 1 / 2
+    }
+
+    #resources {
+        grid-column: 2 / 3
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
