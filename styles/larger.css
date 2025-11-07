@@ -1,4 +1,5 @@
 @media (min-width: 48rem) {
+
     .site-header {
         padding: 1rem 2rem;
     }
@@ -8,8 +9,9 @@
     }
 
     .nav {
-        display: block;
-        min-height: 48px;
+        visibility: visible;
+        opacity: 1;
+        max-height: none;
     }
 
     .nav ul {
