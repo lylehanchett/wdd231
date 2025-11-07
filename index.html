@@ -9,15 +9,12 @@
         content="WDD 231 Course Home Page for Lyle Hanchett — Dynamic Web Fundamentals projects and resources.">
     <title>WDD 231 | Home — Lyle Hanchett</title>
 
- 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
- 
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -25,18 +22,21 @@
 </head>
 
 <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
         <div class="brand">
-            <img src="images/Logo.png" alt="Site logo" width="56" height="56">
+            <img src="images/Logo.png" alt="Site logo" width="56" height="56" loading="lazy">
             <span class="owner">Lyle Hanchett</span>
         </div>
 
-        <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation" aria-controls="primaryNav"
+        <button id="menuBtn" class="menu-btn" type="button" aria-label="Toggle navigation" aria-controls="primaryNav"
             aria-expanded="false">☰</button>
 
-        <nav id="primaryNav" class="nav" aria-label="Primary">
+        <nav id="primaryNav" class="nav" aria-label="Primary Navigation">
             <ul>
-                <li><a href="./" class="active">Home</a></li>
+                <li><a href="./" class="active" aria-current="page">Home</a></li>
                 <li><a href="chamber/">Chamber</a></li>
                 <li><a href="final/">Final</a></li>
                 <li><a href="https://github.com/lylehanchett" target="_blank" rel="noopener">GitHub</a></li>
@@ -44,7 +44,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <h1>Home</h1>
 
         <section id="welcome" class="panel">
@@ -56,9 +56,9 @@
         <section id="certificate" class="panel">
             <h2>Certificate Courses</h2>
             <div class="controls">
-                <button class="filter-btn" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="WDD">WDD</button>
-                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="all" type="button">All</button>
+                <button class="filter-btn" data-filter="WDD" type="button">WDD</button>
+                <button class="filter-btn" data-filter="CSE" type="button">CSE</button>
             </div>
             <div id="courseList" class="cards" aria-live="polite"></div>
             <p class="credits">Total Credits: <span id="creditTotal">0</span></p>
