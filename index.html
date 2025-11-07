@@ -9,12 +9,20 @@
         content="WDD 231 Course Home Page for Lyle Hanchett — Dynamic Web Fundamentals projects and resources.">
     <title>WDD 231 | Home — Lyle Hanchett</title>
 
+    <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="styles/larger.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <style>
+        * {
+            font-display: swap;
+        }
+    </style>
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -27,7 +35,7 @@
 
     <header class="site-header">
         <div class="brand">
-            <img src="images/Logo.webp" alt="Site logo" width="56" height="56" loading="lazy">
+            <img src="images/logo.svg" alt="Lyle Hanchett Logo" width="56" height="56" loading="lazy">
             <span class="owner">Lyle Hanchett</span>
         </div>
 
@@ -36,7 +44,7 @@
 
         <nav id="primaryNav" class="nav" aria-label="Primary Navigation">
             <ul>
-                <li><a href="./" class="active" aria-current="page">Home</a></li>
+                <li><a href="./" aria-current="page" class="active">Home</a></li>
                 <li><a href="chamber/">Chamber</a></li>
                 <li><a href="final/">Final</a></li>
                 <li><a href="https://github.com/lylehanchett" target="_blank" rel="noopener">GitHub</a></li>
@@ -83,6 +91,7 @@
         <p>© <span id="year"></span> Lyle Hanchett • Gilbert, Arizona</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>
