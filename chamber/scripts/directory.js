@@ -1,10 +1,18 @@
 const url = './data/members.json';
 const container = document.querySelector('#directoryContainer');
 
+container.style.minHeight = "300px";
+
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data.members);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        displayMembers(data.members);
+        container.style.minHeight = ""; 
+    } catch (error) {
+        console.error("Error loading members:", error);
+        container.innerHTML = "<p>Unable to load directory members.</p>";
+    }
 }
 getMembers();
 
@@ -20,20 +28,26 @@ function displayMembers(members) {
     container.innerHTML = '';
 
     members.forEach(member => {
+        const levelName = getLevelName(member.membership);
+
         const card = document.createElement('section');
         card.classList.add('member-card');
-
-        const levelName = getLevelName(member.membership);
 
         card.innerHTML = `
             <img src="images/${member.image}"
                 alt="${member.name} — ${levelName}, ${member.industry}"
-                width="80" height="80" loading="lazy">
+                width="200" height="120"
+                loading="lazy" fetchpriority="low">
 
-            <h3>${member.name}</h3>
+            <h2>${member.name}</h2>
             <p>${member.address}</p>
             <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
+            <a href="${member.website}" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Visit website for ${member.name}">
+               Visit Website
+            </a>
             <p class="level level-${member.membership}">${levelName}</p>
         `;
 
