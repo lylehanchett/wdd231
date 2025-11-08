@@ -1,0 +1,28 @@
+{
+    "familyName": "Smith",
+    "moveInDate": "2024-01-12",
+    "numberOfFamilyMembers": 4,
+    "visitedByBishopric": false,
+    "members": [
+        {
+            "name": "John Smith",
+            "gender": "Male",
+            "birthdate": "1985-03-18"
+        },
+        {
+            "name": "Sarah Smith",
+            "gender": "Female",
+            "birthdate": "1987-07-09"
+        },
+        {
+            "name": "Emily Smith",
+            "gender": "Female",
+            "birthdate": "2012-10-25"
+        },
+        {
+            "name": "Jacob Smith",
+            "gender": "Male",
+            "birthdate": "2016-05-14"
+        }
+    ]
+}
