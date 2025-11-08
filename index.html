@@ -17,23 +17,30 @@
 
     <title>WDD 231 | Home — Lyle Hanchett</title>
     <link rel="icon" href="favicon.ico">
+
+    <!-- CSS Preload + noscript fallback -->
     <link rel="preload" href="styles/small.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" href="styles/small.css">
+    <noscript>
+        <link rel="stylesheet" href="styles/small.css">
+    </noscript>
 
     <link rel="preload" href="styles/larger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" href="styles/larger.css">
+    <noscript>
+        <link rel="stylesheet" href="styles/larger.css">
+    </noscript>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
+    <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/courses.js" defer></script>
 </head>
 
 <body>
-
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
