@@ -14,7 +14,7 @@ body {
     margin: 0;
 }
 
-/* HEADER */
+
 header {
     background: var(--brand);
     color: white;
@@ -45,7 +45,6 @@ header {
     cursor: pointer;
 }
 
-/* NAV */
 nav {
     display: none;
     flex-direction: column;
@@ -69,7 +68,6 @@ nav a.active {
     border-radius: 6px;
 }
 
-/* MAIN */
 main {
     max-width: 1200px;
     margin: auto;
@@ -81,7 +79,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* GRID & LIST BUTTONS */
 .view-toggle {
     margin-bottom: 1.5rem;
 }
@@ -97,7 +94,6 @@ h1 {
     font-weight: bold;
 }
 
-/* FOOTER */
 footer {
     padding: 1rem;
     background: #eee;
@@ -105,7 +101,6 @@ footer {
     font-size: .9rem;
 }
 
-/* DESKTOP NAV */
 @media(min-width: 700px) {
     nav {
         display: flex;

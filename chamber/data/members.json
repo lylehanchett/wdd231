@@ -14,7 +14,7 @@
             "address": "1234 E Elliot Rd, Gilbert, AZ",
             "phone": "480-555-9217",
             "website": "https://gilberttechrepair.com",
-            "image": "techrepair.png",
+            "image": "techrepair.webp",
             "membership": 2,
             "industry": "Electronics / Repair"
         },
@@ -50,7 +50,7 @@
             "address": "566 W Warner Rd, Gilbert, AZ",
             "phone": "480-555-8998",
             "website": "https://ezcater.com",
-            "image": "catering.svg",
+            "image": "catering.webp",
             "membership": 1,
             "industry": "Food / Catering"
         },
@@ -59,7 +59,7 @@
             "address": "330 S Higley Rd, Gilbert, AZ",
             "phone": "480-555-4470",
             "website": "https://azsolarpros.com",
-            "image": "solar.png",
+            "image": "solar.webp",
             "membership": 3,
             "industry": "Solar + Energy"
         }
