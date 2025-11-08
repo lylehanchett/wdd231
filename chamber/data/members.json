@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Sunrise Automation Solutions",
+            "address": "745 S Val Vista Dr, Gilbert, AZ",
+            "phone": "480-555-1842",
+            "website": "https://sunriseautomation.com",
+            "image": "sunrise.webp",
+            "membership": 3,
+            "industry": "Industrial Automation"
+        },
+        {
+            "name": "Gilbert Tech Repair",
+            "address": "1234 E Elliot Rd, Gilbert, AZ",
+            "phone": "480-555-9217",
+            "website": "https://gilberttechrepair.com",
+            "image": "techrepair.png",
+            "membership": 2,
+            "industry": "Electronics / Repair"
+        },
+        {
+            "name": "Cooper Mesa Financial",
+            "address": "88 S Gilbert Rd, Gilbert, AZ",
+            "phone": "480-555-7390",
+            "website": "https://cooperfinancial.com",
+            "image": "cooper.webp",
+            "membership": 3,
+            "industry": "Finance / Consulting"
+        },
+        {
+            "name": "Desert Peak Plumbing",
+            "address": "432 N Lindsay Rd, Gilbert, AZ",
+            "phone": "480-555-6123",
+            "website": "https://desertpeakplumbing.com",
+            "image": "plumbing.webp",
+            "membership": 1,
+            "industry": "Plumbing"
+        },
+        {
+            "name": "East Valley Strength",
+            "address": "2100 S Greenfield Rd, Gilbert, AZ",
+            "phone": "480-555-1134",
+            "website": "https://eastvalleystrength.com",
+            "image": "gym.webp",
+            "membership": 2,
+            "industry": "Fitness / Health"
+        },
+        {
+            "name": "ezCatering",
+            "address": "566 W Warner Rd, Gilbert, AZ",
+            "phone": "480-555-8998",
+            "website": "https://ezcater.com",
+            "image": "catering.svg",
+            "membership": 1,
+            "industry": "Food / Catering"
+        },
+        {
+            "name": "Arizona Solar Pros",
+            "address": "330 S Higley Rd, Gilbert, AZ",
+            "phone": "480-555-4470",
+            "website": "https://azsolarpros.com",
+            "image": "solar.png",
+            "membership": 3,
+            "industry": "Solar + Energy"
+        }
+    ]
+}
