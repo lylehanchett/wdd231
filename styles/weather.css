@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    text-align: center;
+}
+
+figure {
+    margin: 1rem auto;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
