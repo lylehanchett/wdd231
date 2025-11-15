@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lyle Hanchett">
+
     <meta name="description"
         content="Gilbert Chamber of Commerce — connecting local businesses, supporting growth, and strengthening the Gilbert, Arizona community.">
 
@@ -18,6 +19,10 @@
     <meta property="og:url" content="https://lylehanchett.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -27,6 +32,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="branding">
             <img src="images/logo.svg" alt="Gilbert Chamber Logo" width="50" height="50">
@@ -45,20 +51,23 @@
     </header>
 
     <main>
+
         <section class="hero">
             <div class="hero-text">
                 <h1>Supporting Business in Gilbert, Arizona</h1>
-                <p>Connect, grow, and thrive with the Gilbert Chamber of Commerce through networking, advocacy, and
-                    community partnerships.</p>
+                <p>Connect, grow, and thrive with the Gilbert Chamber of Commerce through networking,
+                    advocacy, and community development.</p>
                 <a class="cta-btn" href="join.html">Join the Chamber</a>
             </div>
 
             <picture class="hero-image">
-                <img src="images/hero.webp" alt="Downtown Gilbert with local businesses" loading="eager">
+                <img src="images/hero.webp" alt="Downtown Gilbert featuring local businesses and the iconic water tower"
+                    loading="eager">
             </picture>
         </section>
 
         <section class="home-grid">
+
             <section class="home-panel events">
                 <h2>Upcoming Events</h2>
                 <ul class="events-list">
@@ -77,23 +86,22 @@
                 </ul>
             </section>
 
-
             <section class="home-panel weather-panel">
                 <h2>Local Weather</h2>
+
                 <div class="weather-current">
                     <div class="weather-main">
                         <span id="current-temp" class="weather-temp">--°</span>
                         <span id="weather-desc" class="weather-desc">Loading...</span>
                     </div>
                     <div class="weather-icon-wrap">
-                        <img id="weather-icon" src="" alt="" loading="lazy">
+                        <img id="weather-icon" src="images/weather-fallback.png" alt="Weather icon" loading="lazy">
                     </div>
                 </div>
 
                 <div class="forecast">
                     <h3>3-Day Forecast</h3>
-                    <ul id="forecast" class="forecast-list">
-                    </ul>
+                    <ul id="forecast" class="forecast-list"></ul>
                 </div>
             </section>
 
@@ -101,6 +109,7 @@
                 <h2>Member Spotlights</h2>
                 <div id="spotlight-container"></div>
             </section>
+
         </section>
     </main>
 
@@ -109,6 +118,7 @@
         <p>&copy; <span id="year"></span> Gilbert Chamber | WDD 231 | Lyle Hanchett</p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
+
 </body>
 
 </html>
