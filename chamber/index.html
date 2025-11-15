@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lyle Hanchett">
+    <meta name="description"
+        content="Gilbert Chamber of Commerce — connecting local businesses, supporting growth, and strengthening the Gilbert, Arizona community.">
+
+    <title>Gilbert Chamber | Home</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Gilbert Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover Gilbert Chamber events, member businesses, and resources to help your company grow.">
+    <meta property="og:image" content="https://lylehanchett.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://lylehanchett.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.svg" alt="Gilbert Chamber Logo" width="50" height="50">
+            <span>Gilbert Chamber of Commerce</span>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html">Course Home</a>
+            <a href="index.html" class="active">Chamber Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Supporting Business in Gilbert, Arizona</h1>
+                <p>Connect, grow, and thrive with the Gilbert Chamber of Commerce through networking, advocacy, and
+                    community partnerships.</p>
+                <a class="cta-btn" href="join.html">Join the Chamber</a>
+            </div>
+
+            <picture class="hero-image">
+                <img src="images/hero.webp" alt="Downtown Gilbert with local businesses" loading="eager">
+            </picture>
+        </section>
+
+        <section class="home-grid">
+            <section class="home-panel events">
+                <h2>Upcoming Events</h2>
+                <ul class="events-list">
+                    <li>
+                        <h3>Business Networking Breakfast</h3>
+                        <p>Tuesday • 7:30 AM • Downtown Gilbert Café</p>
+                    </li>
+                    <li>
+                        <h3>Small Business Workshop</h3>
+                        <p>Thursday • 6:00 PM • Gilbert Civic Center</p>
+                    </li>
+                    <li>
+                        <h3>Chamber Member Mixer</h3>
+                        <p>Last Friday of the Month • 5:30 PM</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="home-panel weather-panel">
+                <h2>Local Weather</h2>
+                <div class="weather-current">
+                    <div class="weather-main">
+                        <span id="current-temp" class="weather-temp">--°</span>
+                        <span id="weather-desc" class="weather-desc">Loading...</span>
+                    </div>
+                    <div class="weather-icon-wrap">
+                        <img id="weather-icon" src="" alt="" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ul id="forecast" class="forecast-list">
+                    </ul>
+                </div>
+            </section>
+
+            <section class="home-panel spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: info@gilbertchamber.org | Gilbert, AZ</p>
+        <p>&copy; <span id="year"></span> Gilbert Chamber | WDD 231 | Lyle Hanchett</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
