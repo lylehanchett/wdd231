@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lyle Hanchett">
+    <meta name="description" content="Thank you for joining the Gilbert Chamber of Commerce.">
+
+    <title>Gilbert Chamber | Thank You</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Gilbert Chamber Membership Confirmation">
+    <meta property="og:description"
+        content="Confirmation of your membership application with the Gilbert Chamber of Commerce.">
+    <meta property="og:image" content="https://lylehanchett.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://lylehanchett.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.svg" alt="Gilbert Chamber Logo" width="50" height="50">
+            <span>Gilbert Chamber of Commerce</span>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html">Course Home</a>
+            <a href="index.html">Chamber Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Thank You for Joining!</h1>
+        <p class="join-intro">
+            We’ve received your membership application. A chamber representative will contact you soon.
+        </p>
+
+        <section class="home-panel confirmation-panel">
+            <h2>Application Summary</h2>
+
+            <dl class="confirmation-list">
+                <div>
+                    <dt>First Name</dt>
+                    <dd><span id="outFirstName"></span></dd>
+                </div>
+                <div>
+                    <dt>Last Name</dt>
+                    <dd><span id="outLastName"></span></dd>
+                </div>
+                <div>
+                    <dt>Email</dt>
+                    <dd><span id="outEmail"></span></dd>
+                </div>
+                <div>
+                    <dt>Mobile</dt>
+                    <dd><span id="outMobile"></span></dd>
+                </div>
+                <div>
+                    <dt>Business / Organization</dt>
+                    <dd><span id="outOrganization"></span></dd>
+                </div>
+                <div>
+                    <dt>Membership Level</dt>
+                    <dd><span id="outMembership"></span></dd>
+                </div>
+                <div>
+                    <dt>Submitted</dt>
+                    <dd><span id="outTimestamp"></span></dd>
+                </div>
+            </dl>
+
+            <p class="thanks-note">
+                If any of this information is incorrect, please return to the Join page and resubmit your application.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: info@gilbertchamber.org | Gilbert, AZ</p>
+        <p>&copy; <span id="year"></span> Gilbert Chamber | WDD 231 | Lyle Hanchett</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

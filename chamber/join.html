@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lyle Hanchett">
+    <meta name="description"
+        content="Join the Gilbert Chamber of Commerce — membership levels, benefits, and application form.">
+
+    <title>Gilbert Chamber | Join</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Join the Gilbert Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply for membership in the Gilbert Chamber of Commerce. Explore NP, Bronze, Silver, and Gold membership benefits.">
+    <meta property="og:image" content="https://lylehanchett.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://lylehanchett.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.svg" alt="Gilbert Chamber Logo" width="50" height="50">
+            <span>Gilbert Chamber of Commerce</span>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html">Course Home</a>
+            <a href="index.html">Chamber Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Join the Gilbert Chamber</h1>
+        <p class="join-intro">
+            Become part of a network dedicated to helping Gilbert businesses grow through advocacy, connection,
+            and community support.
+        </p>
+
+        <section class="join-layout">
+            <section class="home-panel join-form-panel">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label>
+                        First Name
+                        <input type="text" name="firstName" required autocomplete="given-name"
+                            title="Enter your first name.">
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="lastName" required autocomplete="family-name"
+                            title="Enter your last name.">
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="orgTitle" autocomplete="organization-title"
+                            title="Use letters, spaces, and hyphens only. Minimum 7 characters."
+                            pattern="[A-Za-z\- ]{7,}">
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" required autocomplete="email" placeholder="you@example.com"
+                            title="Enter a valid email address.">
+                    </label>
+
+                    <label>
+                        Mobile Phone
+                        <input type="tel" name="mobile" required autocomplete="tel" placeholder="480-555-1234"
+                            title="Enter a mobile phone number.">
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input type="text" name="organization" required autocomplete="organization"
+                            title="Enter the name of your business or organization.">
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" required title="Select your preferred membership level.">
+                            <option value="">Select a level...</option>
+                            <option value="np">NP Membership (Non-profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea name="description" rows="4"
+                            title="Briefly describe your business or organization."></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit" class="join-submit">Submit Application</button>
+                </form>
+            </section>
+
+            <aside class="home-panel membership-panel">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+                    <article class="membership-card" data-level="np">
+                        <h3>NP Membership</h3>
+                        <p class="price">No fee • Non-profit organizations</p>
+                        <ul>
+                            <li>Directory listing</li>
+                            <li>Access to member events</li>
+                            <li>Volunteer & service opportunities</li>
+                        </ul>
+                        <button type="button" class="more-info-btn" data-modal-target="npModal">
+                            View NP Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card" data-level="bronze">
+                        <h3>Bronze Membership</h3>
+                        <p class="price">$250 / year</p>
+                        <ul>
+                            <li>All NP benefits</li>
+                            <li>Business ribbon-cuttings</li>
+                            <li>Monthly networking breakfasts</li>
+                        </ul>
+                        <button type="button" class="more-info-btn" data-modal-target="bronzeModal">
+                            View Bronze Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card" data-level="silver">
+                        <h3>Silver Membership</h3>
+                        <p class="price">$500 / year</p>
+                        <ul>
+                            <li>All Bronze benefits</li>
+                            <li>Website spotlight feature</li>
+                            <li>Discounted event sponsorships</li>
+                        </ul>
+                        <button type="button" class="more-info-btn" data-modal-target="silverModal">
+                            View Silver Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card" data-level="gold">
+                        <h3>Gold Membership</h3>
+                        <p class="price">$1000 / year</p>
+                        <ul>
+                            <li>All Silver benefits</li>
+                            <li>Premium homepage spotlights</li>
+                            <li>Exclusive leadership roundtables</li>
+                        </ul>
+                        <button type="button" class="more-info-btn" data-modal-target="goldModal">
+                            View Gold Benefits
+                        </button>
+                    </article>
+                </div>
+            </aside>
+        </section>
+
+        <dialog id="npModal" class="membership-modal">
+            <h2>NP Membership Benefits</h2>
+            <p>Designed for non-profit organizations with no annual fee.</p>
+            <ul>
+                <li>Basic directory listing with contact information</li>
+                <li>Access to networking events and workshops</li>
+                <li>Opportunities to promote community service projects</li>
+                <li>Inclusion in quarterly community impact newsletter</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal" class="membership-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <p>Perfect for small businesses getting started in the community.</p>
+            <ul>
+                <li>All NP Membership benefits</li>
+                <li>Ribbon-cutting ceremony with social media coverage</li>
+                <li>Priority listing in the online directory search</li>
+                <li>Access to member-only marketing resources</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silverModal" class="membership-modal">
+            <h2>Silver Membership Benefits</h2>
+            <p>Ideal for growing businesses increasing their visibility.</p>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Business spotlight on the chamber home page</li>
+                <li>Discounted sponsorship rates for chamber events</li>
+                <li>Quarterly strategic networking introductions</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="goldModal" class="membership-modal">
+            <h2>Gold Membership Benefits</h2>
+            <p>Best for organizations seeking maximum exposure and influence.</p>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Premium rotating homepage spotlight placement</li>
+                <li>Invitation to executive roundtables and leadership forums</li>
+                <li>Recognition at annual chamber events</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>Contact: info@gilbertchamber.org | Gilbert, AZ</p>
+        <p>&copy; <span id="year"></span> Gilbert Chamber | WDD 231 | Lyle Hanchett</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -89,3 +89,44 @@ th {
 tr:hover {
     background-color: #e1e1e1;
 }
+
+dialog {
+    border: none;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 90%;
+    background: #ffffff;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.close-modal {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-modal:hover {
+    color: #444;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.modal-content p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
