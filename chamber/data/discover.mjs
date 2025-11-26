@@ -1,4 +1,3 @@
-// chamber/data/discover.mjs
 
 export const places = [
     {
