@@ -298,3 +298,179 @@
         margin-left: 0;
     }
 }
+
+
+.discover-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+.discover-hero h1 {
+    margin-bottom: 0.5rem;
+}
+
+.discover-hero p {
+    max-width: 44rem;
+    margin-bottom: 1rem;
+}
+
+.visit-message {
+    margin-top: 0.75rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.5rem;
+    background: #e8f2fb;
+    border: 1px solid var(--border-light);
+    font-size: 0.95rem;
+}
+
+
+.discover-grid {
+    display: grid;
+    gap: 1.4rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    background: var(--card);
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-light);
+    padding: 1.1rem 1.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    display: grid;
+    gap: 0.5rem;
+}
+
+.discover-card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.6rem;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.discover-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.discover-learn-more {
+    margin-top: 0.4rem;
+    justify-self: start;
+    padding: 0.45rem 0.9rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--brand);
+    background: #fff;
+    color: var(--brand);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.discover-learn-more:hover {
+    background: var(--brand);
+    color: #fff;
+}
+
+.discover-card.card1 {
+    grid-area: card1;
+}
+
+.discover-card.card2 {
+    grid-area: card2;
+}
+
+.discover-card.card3 {
+    grid-area: card3;
+}
+
+.discover-card.card4 {
+    grid-area: card4;
+}
+
+.discover-card.card5 {
+    grid-area: card5;
+}
+
+.discover-card.card6 {
+    grid-area: card6;
+}
+
+.discover-card.card7 {
+    grid-area: card7;
+}
+
+.discover-card.card8 {
+    grid-area: card8;
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+
+    .discover-card img {
+        transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .discover-card:hover img {
+        transform: scale(1.03);
+        filter: brightness(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+
+    .discover-main {
+        padding-top: 2.5rem;
+    }
+
+    .discover-card img {
+        transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .discover-card:hover img {
+        transform: scale(1.04);
+        filter: brightness(1.07);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    }
+}

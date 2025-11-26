@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lyle Hanchett">
+    <meta name="description"
+        content="Discover Gilbert, Arizona — local attractions, parks, shopping, and culture through the Gilbert Chamber.">
+
+    <title>Gilbert Chamber | Discover</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Discover Gilbert with the Chamber of Commerce">
+    <meta property="og:description" content="Explore key attractions, parks, venues, and experiences in Gilbert, AZ.">
+    <meta property="og:image" content="https://lylehanchett.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://lylehanchett.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.svg" alt="Gilbert Chamber Logo" width="50" height="50">
+            <span>Gilbert Chamber of Commerce</span>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html">Course Home</a>
+            <a href="index.html">Chamber Home</a>
+            <a href="discover.html" class="active">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <section class="discover-hero">
+            <h1>Discover Gilbert, Arizona</h1>
+            <p>
+                Gilbert blends family-friendly neighborhoods, vibrant entertainment, and a thriving business community.
+                Explore key destinations that make Gilbert a great place to live, work, and do business.
+            </p>
+            <div id="visitMessage" class="visit-message" aria-live="polite"></div>
+        </section>
+
+        <section class="discover-grid" id="discoverGrid" aria-label="Places of interest in Gilbert">
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: info@gilbertchamber.org | Gilbert, AZ</p>
+        <p>&copy; <span id="year"></span> Gilbert Chamber | WDD 231 | Lyle Hanchett</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
