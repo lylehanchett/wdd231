@@ -43,7 +43,7 @@ export const places = [
         address: "50 W Page Ave, Gilbert, AZ 85233",
         description:
             "An intimate, in-the-round theatre producing year-round family-friendly plays and musicals that bring visitors to downtown Gilbert.",
-        image: "images/haletheatre.webp",
+        image: "images/HaleTheatre.webp",
         imageAlt: "The exterior of Hale Centre Theatre lit in the evening."
     },
     {
@@ -52,7 +52,7 @@ export const places = [
         address: "222 N Ash St, Gilbert, AZ 85234",
         description:
             "A Saturday farmers market featuring local growers, food trucks, and small businesses — a showcase of Gilbert’s food and maker community.",
-        image: "images/farmersmarket.webp",
+        image: "images/FarmersMarket.webp",
         imageAlt: "Vendors and visitors at the Gilbert Farmers Market."
     },
     {
@@ -61,7 +61,7 @@ export const places = [
         address: "2218 E Williams Field Rd, Gilbert, AZ 85296",
         description:
             "An open-air shopping, dining, and entertainment destination that serves as a regional draw for both residents and visitors.",
-        image: "images/santanvillage.webp",
+        image: "images/SanTanVillage.webp",
         imageAlt: "Outdoor shopping walkway at SanTan Village."
     },
     {
@@ -70,7 +70,7 @@ export const places = [
         address: "10 S Gilbert Rd, Gilbert, AZ 85296",
         description:
             "Located in the historic Gilbert Elementary building, the museum preserves and shares the town’s agricultural and railroad heritage.",
-        image: "images/gilberthistoricalmuseum.webp",
+        image: "images/GilbertHistoricalMuseum.webp",
         imageAlt: "Historic brick building that houses the Gilbert Historical Museum."
     }
 ];
