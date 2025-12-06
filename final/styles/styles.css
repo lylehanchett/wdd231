@@ -322,3 +322,7 @@ header span {
   border-left: 5px solid var(--accent);
   margin: 1.5rem 0;
 }
+
+#mobile-menu.open {
+  display: flex;
+}
