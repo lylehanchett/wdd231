@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact DLB Integrators</title>
 
@@ -11,81 +11,64 @@
         content="Contact DLB Integrators for custom equipment, automation integration, and installation services.">
     <meta name="author" content="Lyle Hanchett">
 
+    <!-- Google Fonts (Required by rubric) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets (2 required) -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Contact DLB Integrators">
     <meta property="og:description"
         content="Send an inquiry to DLB Integrators about equipment or installation services.">
-    <meta property="og:image" content="images/dlb-logo.webp">
+    <meta property="og:image" content="https://lylehanchett.github.io/wdd231/final/images/electrical-panel.webp">
     <meta property="og:url" content="https://lylehanchett.github.io/wdd231/final/contact.html">
 
     <link rel="icon" href="images/dlb-logo.webp" type="image/png">
-    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
     <header>
         <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo-link">
-                <img src="images/dlb-logo.webp" alt="DLB Integrators Logo" class="logo-img">
-                <span>DLB Integrators</span>
-            </a>
+            <div class="nav-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/dlb-logo.webp" alt="DLB Integrators Logo" class="logo-img">
+                    <span>DLB Integrators</span>
+                </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="custom.html" aria-current="page">Custom Equipment</a></li>
-                <li><a href="installation.html">Installation Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        
-            <div id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">&#9776;</div>
-        </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="custom.html">Custom Equipment</a></li>
+                    <li><a href="installation.html">Installation Services</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
 
-        <div id="mobile-menu">
-            <a href="index.html">Home</a>
-            <a href="custom.html" aria-current="page">Custom Equipment</a>
-            <a href="installation.html">Installation Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
+                <div id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">&#9776;</div>
+            </div>
+
+            <div id="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="custom.html">Custom Equipment</a>
+                <a href="installation.html">Installation Services</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </div>
         </nav>
     </header>
 
     <main class="container">
 
-        <section class="hero">
-            <img src="images/electrical-panel.webp" alt="Control panel with automation wiring" loading="lazy">
-
-            <div class="hero-text">
-                <h2>Contact DLB Integrators</h2>
-                <p>Send us an inquiry for custom automation, equipment, or installation services.</p>
-            </div>
-        </section>
+        <h1>Contact DLB Integrators</h1>
 
         <section>
-            <h2>Inquiry Form</h2>
+            <p>Have questions about equipment, automation, or installation services? We’re here to help.</p>
 
-            <form action="form-result.html" method="get" class="contact-form">
+            <p>You can reach out by email or phone, or use the contact form on this page.</p>
 
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="service">Service Type:</label>
-                <select id="service" name="service" required>
-                    <option value="">Select a service…</option>
-                    <option value="Custom Equipment">Custom Equipment</option>
-                    <option value="Installation Services">Installation Services</option>
-                    <option value="General Question">General Question</option>
-                </select>
-
-                <label for="details">Message:</label>
-                <textarea id="details" name="details" rows="5" required></textarea>
-
-                <button type="submit" class="btn">Submit Inquiry</button>
-            </form>
-
+            <img src="images/electrical-panel.webp" alt="Control panel with automation wiring" loading="lazy">
         </section>
 
     </main>
