@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   updateFooterInfo();
   initHamburgerMenu();
   initInquiryForm();
   loadServiceDetails();
-
 });
 
 // ------------------------------
@@ -23,7 +21,7 @@ function updateFooterInfo() {
 }
 
 // ------------------------------
-// Hamburger Menu
+// Hamburger Menu (FIXED)
 // ------------------------------
 function initHamburgerMenu() {
   const hamburger = document.getElementById("hamburger");
@@ -32,23 +30,24 @@ function initHamburgerMenu() {
   if (!hamburger || !mobileMenu) return;
 
   hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("open");
+    // FIX: Your CSS uses `.show`, not `.open`
+    mobileMenu.classList.toggle("show");
   });
 }
 
 // ------------------------------
-// Contact Form (only runs on contact.html)
+// Contact Form (Runs only on contact page)
 // ------------------------------
 function initInquiryForm() {
   const form = document.getElementById("inquiry-form");
-  if (!form) return; // Exit if not on contact page
+  if (!form) return;
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const name = form.elements["name"].value.trim();
-    const email = form.elements["email"].value.trim();
-    const message = form.elements["message"].value.trim();
+    const name = form.elements["name"]?.value.trim();
+    const email = form.elements["email"]?.value.trim();
+    const message = form.elements["message"]?.value.trim();
 
     if (!name || !email || !message) {
       alert("Please fill out all fields.");
@@ -65,19 +64,18 @@ function saveInquiry(name, email, message) {
     name,
     email,
     message,
-    date: new Date().toISOString()
+    date: new Date().toISOString(),
   };
 
   const stored = JSON.parse(localStorage.getItem("inquiries")) || [];
   stored.push(inquiry);
-
   localStorage.setItem("inquiries", JSON.stringify(stored));
 
   alert("Thank you! Your inquiry has been submitted.");
 }
 
 // ------------------------------
-// Load service details (only on pages with data-page attribute)
+// Load service details (Only if data-page attribute exists)
 // ------------------------------
 function loadServiceDetails() {
   const page = document.body.dataset.page;
@@ -89,13 +87,13 @@ function loadServiceDetails() {
     "custom-equipment": {
       title: "Custom Equipment",
       description:
-        "Design and fabrication of custom automated machines built for washdown environments."
+        "Design and fabrication of custom automated machines built for washdown environments.",
     },
-    "installation": {
+    installation: {
       title: "Installation Services",
       description:
-        "Expert installation of conveyors and automated systems for seamless integration."
-    }
+        "Expert installation of conveyors and automated systems for seamless integration.",
+    },
   };
 
   if (services[page]) {
