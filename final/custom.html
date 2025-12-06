@@ -18,14 +18,12 @@
   <meta property="og:url" content="https://lylehanchett.github.io/wdd231/final/custom.html">
 
   <link rel="icon" href="images/dlb-logo.webp" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body data-page="custom-equipment">
 
   <header>
     <nav>
@@ -54,46 +52,61 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
 
-    <h1>Custom Equipment</h1>
-
-    <section>
-      <h2>Stainless Steel Washdown Equipment</h2>
-      <p>We design and fabricate custom stainless-steel, washdown-rated automation equipment for the food industry.</p>
-
+    <!-- HERO SECTION RESTORED -->
+    <section class="hero">
       <img src="images/ywd.webp" alt="Custom stainless-steel washdown equipment module" loading="lazy">
-
-      <p>Each piece is engineered for durability, sanitation, and seamless integration with your existing systems.</p>
+      <div class="hero-text">
+        <h2>Custom Automated Equipment</h2>
+        <p>Engineered for washdown environments, built for food-industry automation.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Industries Served</h2>
-      <ul>
-        <li>Food Production</li>
-        <li>Packaging Automation</li>
-        <li>Material Handling</li>
-        <li>Inspection & Quality Control</li>
-      </ul>
-    </section>
+    <div class="container">
 
-    <section>
-      <h2>Capabilities</h2>
-      <p>We specialize in fully custom-built components based on your workflow, available space, and functional needs.
-      </p>
+      <section class="services-overview">
+        <h2>Stainless Steel Automation Equipment</h2>
+        <p>DLB Integrators designs and fabricates custom stainless-steel equipment for high-demand food-industry
+          production lines.</p>
+      </section>
 
-      <p>From conveyors to robotic end-effectors, every component is designed to meet washdown requirements and
-        integrate with sensors, PLCs, and inspection systems.</p>
-    </section>
+      <section>
+        <h2>Featured Custom Equipment</h2>
+        <p>Below is a dynamically generated gallery of equipment built and integrated by DLB Integrators.</p>
+
+        <!-- REQUIRED FOR CARDS -->
+        <div id="equipmentCards" class="cards-container"></div>
+      </section>
+
+      <section>
+        <h2>Last Viewed Equipment</h2>
+        <div id="lastViewed" class="feature-card">
+          <p>No equipment viewed yet.</p>
+        </div>
+      </section>
+
+    </div>
 
   </main>
+
+  <!-- REQUIRED MODAL -->
+  <div id="equipmentModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <ul id="modalFeatures"></ul>
+      <button id="modalClose">Close</button>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 DLB Integrators | Lyle Hanchett</p>
     <p id="lastModified"></p>
   </footer>
 
-  <script src="scripts/custom.js" defer></script>
+  <script src="scripts/project.js" defer></script>
+  <script type="module" src="scripts/custom.js"></script>
 
 </body>
 

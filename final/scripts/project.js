@@ -1,12 +1,15 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
   updateFooterInfo();
   initHamburgerMenu();
   initInquiryForm();
   loadServiceDetails();
+
 });
 
+// ------------------------------
+// Footer Info
+// ------------------------------
 function updateFooterInfo() {
   const lastMod = document.getElementById("lastModified");
   if (lastMod) {
@@ -19,6 +22,9 @@ function updateFooterInfo() {
   }
 }
 
+// ------------------------------
+// Hamburger Menu
+// ------------------------------
 function initHamburgerMenu() {
   const hamburger = document.getElementById("hamburger");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -26,13 +32,16 @@ function initHamburgerMenu() {
   if (!hamburger || !mobileMenu) return;
 
   hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("show");
+    mobileMenu.classList.toggle("open");
   });
 }
 
+// ------------------------------
+// Contact Form (only runs on contact.html)
+// ------------------------------
 function initInquiryForm() {
   const form = document.getElementById("inquiry-form");
-  if (!form) return; 
+  if (!form) return; // Exit if not on contact page
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -56,19 +65,24 @@ function saveInquiry(name, email, message) {
     name,
     email,
     message,
-    date: new Date().toISOString(),
+    date: new Date().toISOString()
   };
 
   const stored = JSON.parse(localStorage.getItem("inquiries")) || [];
   stored.push(inquiry);
+
   localStorage.setItem("inquiries", JSON.stringify(stored));
 
   alert("Thank you! Your inquiry has been submitted.");
 }
 
+// ------------------------------
+// Load service details (only on pages with data-page attribute)
+// ------------------------------
 function loadServiceDetails() {
-  const page = document.body.dataset.page; 
+  const page = document.body.dataset.page;
   const serviceDetails = document.getElementById("service-details");
+
   if (!page || !serviceDetails) return;
 
   const services = {
