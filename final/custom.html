@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Custom Equipment | DLB Integrators</title>
 
@@ -14,10 +14,12 @@
   <meta property="og:title" content="Custom Equipment | DLB Integrators">
   <meta property="og:description"
     content="Explore custom stainless-steel equipment and washdown-rated automation solutions from DLB Integrators.">
-  <meta property="og:image" content="images/demler.webp">
+  <meta property="og:image" content="https://lylehanchett.github.io/wdd231/final/images/ywd.webp">
   <meta property="og:url" content="https://lylehanchett.github.io/wdd231/final/custom.html">
 
   <link rel="icon" href="images/dlb-logo.webp" type="image/png">
+
+  <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -50,66 +52,46 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
-    <section class="hero">
+    <h1>Custom Equipment</h1>
+
+    <section>
+      <h2>Stainless Steel Washdown Equipment</h2>
+      <p>We design and fabricate custom stainless-steel, washdown-rated automation equipment for the food industry.</p>
+
       <img src="images/ywd.webp" alt="Custom stainless-steel washdown equipment module" loading="lazy">
 
-      <div class="hero-text">
-        <h2>Custom Automated Equipment</h2>
-        <p>Engineered for washdown environments, built for food-industry automation.</p>
-      </div>
+      <p>Each piece is engineered for durability, sanitation, and seamless integration with your existing systems.</p>
     </section>
 
-    <div class="container">
+    <section>
+      <h2>Industries Served</h2>
+      <ul>
+        <li>Food Production</li>
+        <li>Packaging Automation</li>
+        <li>Material Handling</li>
+        <li>Inspection & Quality Control</li>
+      </ul>
+    </section>
 
-      <section class="services-overview">
-        <h2>Stainless Steel Automation Equipment</h2>
-        <p>
-          DLB Integrators designs and fabricates custom stainless-steel equipment to meet the demands of
-          food-industry environments. Each piece is built for durability, washdown safety, and seamless
-          integration into your existing production line.
-        </p>
-      </section>
+    <section>
+      <h2>Capabilities</h2>
+      <p>We specialize in fully custom-built components based on your workflow, available space, and functional needs.
+      </p>
 
-      <section>
-        <h2>Featured Custom Equipment</h2>
-        <p>
-          Below is a dynamically generated gallery of equipment built and integrated by DLB Integrators.
-          Click any item to learn more about its features.
-        </p>
-
-        <div id="equipmentCards" class="cards-container">
-        </div>
-      </section>
-
-      <section>
-        <h2>Last Viewed Equipment</h2>
-        <div id="lastViewed" class="feature-card">
-          <p>No equipment viewed yet.</p>
-        </div>
-      </section>
-
-    </div>
+      <p>From conveyors to robotic end-effectors, every component is designed to meet washdown requirements and
+        integrate with sensors, PLCs, and inspection systems.</p>
+    </section>
 
   </main>
-
-  <div id="equipmentModal" class="modal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog"
-    aria-modal="true">
-    <div class="modal-content">
-      <h3 id="modalTitle"></h3>
-      <p id="modalDescription"></p>
-      <ul id="modalFeatures"></ul>
-      <button id="modalClose">Close</button>
-    </div>
-  </div>
 
   <footer>
     <p>&copy; 2025 DLB Integrators | Lyle Hanchett</p>
     <p id="lastModified"></p>
   </footer>
 
-  <script type="module" src="scripts/custom.js"></script>
+  <script src="scripts/custom.js" defer></script>
 
 </body>
 
