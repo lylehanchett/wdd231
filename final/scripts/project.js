@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadServiceDetails();
 });
 
-// ------------------------------
-// Footer Info
-// ------------------------------
 function updateFooterInfo() {
   const lastMod = document.getElementById("lastModified");
   if (lastMod) {
@@ -20,9 +17,6 @@ function updateFooterInfo() {
   }
 }
 
-// ------------------------------
-// Hamburger Menu (FIXED)
-// ------------------------------
 function initHamburgerMenu() {
   const hamburger = document.getElementById("hamburger");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -30,14 +24,10 @@ function initHamburgerMenu() {
   if (!hamburger || !mobileMenu) return;
 
   hamburger.addEventListener("click", () => {
-    // FIX: Your CSS uses `.show`, not `.open`
     mobileMenu.classList.toggle("show");
   });
 }
 
-// ------------------------------
-// Contact Form (Runs only on contact page)
-// ------------------------------
 function initInquiryForm() {
   const form = document.getElementById("inquiry-form");
   if (!form) return;
@@ -74,9 +64,6 @@ function saveInquiry(name, email, message) {
   alert("Thank you! Your inquiry has been submitted.");
 }
 
-// ------------------------------
-// Load service details (Only if data-page attribute exists)
-// ------------------------------
 function loadServiceDetails() {
   const page = document.body.dataset.page;
   const serviceDetails = document.getElementById("service-details");

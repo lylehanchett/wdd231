@@ -28,7 +28,6 @@ body {
   padding: 1rem;
 }
 
-/* HEADER / NAV --------------------------------------------- */
 
 header {
   background: var(--primary);
@@ -84,7 +83,7 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* HAMBURGER ----------------------------------------------- */
+
 
 #hamburger {
   display: none;
@@ -106,12 +105,12 @@ nav a:hover {
   font-weight: 600;
 }
 
-/* MOBILE MENU SHOW CLASS */
+
 #mobile-menu.show {
   display: flex;
 }
 
-/* HERO ------------------------------------------------------ */
+
 
 .hero {
   position: relative;
@@ -129,7 +128,7 @@ nav a:hover {
 .hero-text {
   position: absolute;
   top: 12%;
-  /* Slightly higher text */
+
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.55);
@@ -143,20 +142,19 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Contact hero custom size */
+
 body.contact-page .hero img {
   width: 85%;
   max-width: 950px;
 }
 
-/* CONTACT FORM HEADING FIX */
+
 .contact-form-section h2,
 .contact-page h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-/* SERVICES -------------------------------------------------- */
 
 .services-overview {
   margin-top: 2rem;
@@ -213,8 +211,6 @@ body.contact-page .hero img {
   margin: 0.5rem 0;
 }
 
-/* CARDS ----------------------------------------------------- */
-
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -241,7 +237,6 @@ body.contact-page .hero img {
   margin-top: 0.5rem;
 }
 
-/* MODAL ------------------------------------------------------ */
 
 .modal {
   display: none;
@@ -262,7 +257,7 @@ body.contact-page .hero img {
   max-width: 450px;
 }
 
-/* FORMS ------------------------------------------------------ */
+
 
 form {
   max-width: 700px;
@@ -301,7 +296,7 @@ button:hover {
   background: #0f2f50;
 }
 
-/* FOOTER ----------------------------------------------------- */
+
 
 footer {
   background: var(--primary);
@@ -310,8 +305,18 @@ footer {
   padding: 1rem;
   margin-top: 3rem;
 }
+footer a {
+  color: var(--accent);
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: 600;
+}
 
-/* MOBILE MEDIA QUERIES --------------------------------------- */
+footer a:hover {
+  color: #ffffff;
+  font-size: x-large;
+}
+
 
 @media (max-width: 768px) {
 
