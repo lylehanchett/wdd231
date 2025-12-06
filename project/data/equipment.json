@@ -1,0 +1,212 @@
+[
+    {
+        "id": "conveyor-washdown",
+        "name": "Washdown Conveyor System",
+        "image": "images/conveyors-1.webp",
+        "category": "Conveyor",
+        "environment": "Full washdown",
+        "description": "Stainless-steel conveyor designed for high-moisture food production environments with hygienic frame design.",
+        "features": [
+            "304 stainless construction",
+            "Open-frame hygienic design",
+            "Integrated sensor mounting",
+            "Tool-less belt removal"
+        ]
+    },
+    {
+        "id": "keyence-laser-station",
+        "name": "Keyence Laser Inspection Conveyor",
+        "image": "images/keyence-laser-conveyor.webp",
+        "category": "Inspection",
+        "environment": "Washdown guarded",
+        "description": "Custom conveyor station integrating a Keyence laser for code/date verification and product tracking.",
+        "features": [
+            "Built-in laser mounting structure",
+            "Guarding to protect optics",
+            "Encoder integration ready",
+            "Adjustable side guides"
+        ]
+    },
+    {
+        "id": "demler-system",
+        "name": "Stainless Transfer System",
+        "image": "images/demler.webp",
+        "category": "Transfer & Sorting",
+        "environment": "Washdown",
+        "description": "Multi-conveyor stainless transfer section used for product orientation or combining lanes.",
+        "features": [
+            "Multiple belt zones",
+            "Guarded moving components",
+            "Hygienic frame geometry",
+            "Custom widths and lengths"
+        ]
+    },
+    {
+        "id": "ywd-module",
+        "name": "Custom Washdown Module",
+        "image": "images/ywd.webp",
+        "category": "Custom Machine",
+        "environment": "High-pressure washdown",
+        "description": "Custom stainless module designed to integrate between existing equipment and provide automation functionality.",
+        "features": [
+            "Fits existing line spacing",
+            "Fully welded stainless frame",
+            "Sloped surfaces for drainage",
+            "Cable management for harsh environments"
+        ]
+    },
+    {
+        "id": "robot-cell",
+        "name": "Robotic Pick-and-Place Cell",
+        "image": "images/incide-robot.webp",
+        "category": "Robotics",
+        "environment": "Production floor",
+        "description": "Robotic system for case packing, palletizing, or product pick-and-place in automated lines.",
+        "features": [
+            "Robot pedestal and guarding",
+            "Conveyor infeed integration",
+            "Safety interlocks and e-stops",
+            "Custom end-of-arm tooling"
+        ]
+    },
+    {
+        "id": "stainless-panel",
+        "name": "Stainless Electrical Control Panel",
+        "image": "images/electrical-panel.webp",
+        "category": "Control Panel",
+        "environment": "Washdown panel",
+        "description": "Stainless steel electrical enclosure for PLCs and control hardware in wet food production areas.",
+        "features": [
+            "NEMA-rated enclosure",
+            "Sealed gasketed door",
+            "Service-friendly layout",
+            "External disconnect"
+        ]
+    },
+    {
+        "id": "industrial-bagger",
+        "name": "Industrial Bagging Machine",
+        "image": "images/industrialbagger.webp",
+        "category": "Bagging System",
+        "environment": "Industrial",
+        "description": "Heavy-duty bagging system for sand, concrete, or bulk product packaging.",
+        "features": [
+            "High-capacity hopper",
+            "Precision product weighing",
+            "Durable industrial frame",
+            "Automated fill cycle"
+        ]
+    },
+    {
+        "id": "bypass-line",
+        "name": "Custom Bypass Conveyor Line",
+        "image": "images/bypasssystem.webp",
+        "category": "Conveyor System",
+        "environment": "Full washdown",
+        "description": "Complete stainless washdown conveyor line with bypass function for routing product flow.",
+        "features": [
+            "Stainless hygienic design",
+            "Bypass diverter section",
+            "Integrated safety guarding",
+            "Custom lengths and widths"
+        ]
+    },
+    {
+        "id": "wulftec-wrapper",
+        "name": "Wulftec Fully Automatic Wrapping Line",
+        "image": "images/wulftecsystem.webp",
+        "category": "Wrapping System",
+        "environment": "Industrial",
+        "description": "Fully automated Wulftec stretch wrapping conveyor line designed for high-volume pallet automation.",
+        "features": [
+            "Automatic film cut & clamp",
+            "Heavy-duty rotary arm",
+            "Full safety guarding",
+            "Seamless integration with conveyor systems"
+        ]
+    },
+    {
+        "id": "pallet-replacer",
+        "name": "Pallet Replacer System",
+        "image": "images/pallet-replacer.webp",
+        "category": "Material Handling",
+        "environment": "Industrial",
+        "description": "Machine that inserts a metal plate under a loaded pallet to transfer product to a new pallet.",
+        "features": [
+            "Heavy-duty pusher mechanism",
+            "Precision plate movement",
+            "Ideal for damaged pallet replacement",
+            "Handles full pallet loads"
+        ]
+    },
+    {
+        "id": "mochi-singulator",
+        "name": "Mochi Singulation and Feed System",
+        "image": "images/mochi.webp",
+        "category": "Feeding System",
+        "environment": "Food production",
+        "description": "Machine that singulates mochi pieces from a mass flow and drops them into a flow wrapper.",
+        "features": [
+            "Food-grade stainless design",
+            "Timed product separation",
+            "Flow-wrapper synchronized",
+            "Sanitary construction"
+        ]
+    },
+    {
+        "id": "elvs-case-erector",
+        "name": "ELVS Case Erector",
+        "image": "images/ELVSC-image.webp",
+        "category": "Case Handling",
+        "environment": "Production floor",
+        "description": "Automated case erector for handling RSC and custom case sizes in packaging lines.",
+        "features": [
+            "Automatic case fold & form",
+            "Hot melt or tape options",
+            "High-speed operation",
+            "Tool-less changeover"
+        ]
+    },
+    {
+        "id": "flow-wrapper",
+        "name": "C-600 Flow Wrapper",
+        "image": "images/C-600.webp",
+        "category": "Packaging Machine",
+        "environment": "Food production",
+        "description": "Automated flow-wrapper used for high-speed primary packaging applications.",
+        "features": [
+            "High-speed sealing jaws",
+            "Film tracking system",
+            "Automatic product feed",
+            "Washdown-friendly design"
+        ]
+    },
+    {
+        "id": "adco-compact-packer",
+        "name": "ADCO Compact Carton Packer",
+        "image": "images/Compact4.webp",
+        "category": "Cartoning Machine",
+        "environment": "Production floor",
+        "description": "High-speed cartoner for automated carton forming, loading, and sealing.",
+        "features": [
+            "Compact footprint",
+            "Servo-driven motion",
+            "Precision carton loading",
+            "Multiple carton size capability"
+        ]
+    },
+    {
+        "id": "inclined-pocket-conveyor",
+        "name": "Inclined Pocket Conveyor",
+        "image": "images/inclined-pocket-conveyor.webp",
+        "category": "Conveyor",
+        "environment": "Washdown stainless",
+        "description": "A 22-inch wide, 25-foot long incline conveyor with stainless-steel construction, hopper, and VFD control.",
+        "features": [
+            "30° incline",
+            "VFD drive system (230V)",
+            "Food-grade pockets",
+            "Hopper with bagging chute"
+        ]
+    }
+]
