@@ -12,7 +12,7 @@
             "Integrated sensor mounting",
             "Tool-less belt removal"
         ]
-    },
+    }, 
     {
         "id": "keyence-laser-station",
         "name": "Keyence Laser Inspection Conveyor",

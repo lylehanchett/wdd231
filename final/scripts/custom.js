@@ -1,4 +1,3 @@
-// custom.js – ES Module for dynamic equipment + modal + last viewed tracking
 
 import { loadEquipmentData } from "./modules/fetchEquipment.js";
 import { openModal, closeModal, setupModalControls } from "./modules/modal.js";
